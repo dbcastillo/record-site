@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import taylor from "/Taylor.png";
+import "./App.css";
+import records from "./data/records.json";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="p-8">
+      <h1 className="text-2xl font-bold mb-4">Record Collection</h1>
+      <ul className="space-y-4">
+        {records.map((record) => (
+          <li
+            key={record.id}
+            className="bg-white-600 p-4 rounded flex items-center gap-4"
+          >
+            <img
+              src={taylor}
+              alt={record.album}
+              className="w-20 h-20 object-cover rounded shadow"
+            />
+            <div>
+              <p className="font-semibold">{record.album}</p>
+              <p className="text-sm text-gray-600">
+                {record.artist} ({record.year})
+              </p>
+              <p className="text-blue-500">${record.price}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
-export default App
+export default App;
