@@ -4,6 +4,39 @@
     "artist": "Taylor Swift",
     "album": "1989 (Taylor's Version)",
     "year": 2023,
-    "price": 37.99
+    "price": 37.99,
+    "cover": "Taylor.png"
+  },
+  {
+    "id": 2,
+    "artist": "Taylor Swift",
+    "album": "1989 (Taylor's Version)",
+    "year": 2023,
+    "price": 37.99,
+    "cover": "Taylor.png"
+  },
+  {
+    "id": 3,
+    "artist": "Taylor Swift",
+    "album": "1989 (Taylor's Version)",
+    "year": 2023,
+    "price": 37.99,
+    "cover": "Taylor.png"
+  },
+  {
+    "id": 4,
+    "artist": "Taylor Swift",
+    "album": "1989 (Taylor's Version)",
+    "year": 2023,
+    "price": 37.99,
+    "cover": "Taylor.png"
+  },
+  {
+    "id": 5,
+    "artist": "Taylor Swift",
+    "album": "1989 (Taylor's Version)",
+    "year": 2023,
+    "price": 37.99,
+    "cover": "Taylor.png"
   }
 ]

@@ -1,35 +1,48 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import taylor from "/Taylor.png";
-import "./App.css";
 import records from "./data/records.json";
 
 function App() {
+  const [selectedAlbum, setSelectedAlbum] = useState(null);
+
   return (
     <div className="p-8">
       <h1 className="text-2xl font-bold mb-4">Record Collection</h1>
-      <ul className="space-y-4">
+      <ul className="flex flex-wrap gap-4">
         {records.map((record) => (
-          <li
-            key={record.id}
-            className="bg-white-600 p-4 rounded flex items-center gap-4"
-          >
+          <li key={record.id}>
             <img
-              src={taylor}
+              src={record.cover}
               alt={record.album}
-              className="w-20 h-20 object-cover rounded shadow"
+              className="w-40 h-40 object-cover rounded shadow cursor-pointer hover:scale-105 transition-transform"
+              onClick={() => setSelectedAlbum(record)}
             />
-            <div>
-              <p className="font-semibold">{record.album}</p>
-              <p className="text-sm text-gray-600">
-                {record.artist} ({record.year})
-              </p>
-              <p className="text-blue-500">${record.price}</p>
-            </div>
           </li>
         ))}
       </ul>
+
+      {selectedAlbum && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg p-6 max-w-sm w-full relative">
+            <button
+              className="absolute top-2 right-2 text-white-500 hover:text-red-800"
+              onClick={() => setSelectedAlbum(null)}
+            >
+              X
+            </button>
+            <img
+              src={selectedAlbum.cover}
+              alt={selectedAlbum.album}
+              className="w-full h-80 object-cover rounded mb-4"
+            />
+            <p className="text-gray-600 mb-2">
+              Artist: {selectedAlbum.artist}
+              <br></br>Album: {selectedAlbum.album}
+              <br></br>Year: {selectedAlbum.year}
+            </p>
+            <p className="text-blue-500">${selectedAlbum.price}</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
