@@ -9,34 +9,118 @@
   },
   {
     "id": 2,
-    "artist": "Taylor Swift",
-    "album": "1989 (Taylor's Version)",
-    "year": 2023,
-    "price": 37.99,
-    "cover": "Taylor.png"
+    "artist": "Green Day",
+    "album": "Dookie",
+    "year": 1994,
+    "price": 25.99,
+    "cover": "GreenDay.png"
   },
   {
     "id": 3,
-    "artist": "Taylor Swift",
-    "album": "1989 (Taylor's Version)",
-    "year": 2023,
-    "price": 37.99,
-    "cover": "Taylor.png"
+    "artist": "Limp Bizkit",
+    "album": "Significant Other",
+    "year": 1999,
+    "price": 32.99,
+    "cover": "LimpBizkit.png"
   },
   {
     "id": 4,
-    "artist": "Taylor Swift",
-    "album": "1989 (Taylor's Version)",
-    "year": 2023,
-    "price": 37.99,
-    "cover": "Taylor.png"
+    "artist": "Kendrick Lamar",
+    "album": "good kid, m.A.A.d city",
+    "year": 2011,
+    "price": 29.99,
+    "cover": "Kendrick.png"
   },
   {
     "id": 5,
-    "artist": "Taylor Swift",
-    "album": "1989 (Taylor's Version)",
-    "year": 2023,
-    "price": 37.99,
-    "cover": "Taylor.png"
+    "artist": "Beastie Boys",
+    "album": "Licensed to Ill",
+    "year": 1985,
+    "price": 34.99,
+    "cover": "Beastie.png"
+  },
+  {
+    "id": 6,
+    "artist": "Frank Sinatra",
+    "album": "Ultimate Sinatra",
+    "year": 2015,
+    "price": 39.99,
+    "cover": "Sinatra.png"
+  },
+  {
+    "id": 7,
+    "artist": "Amy Winehouse",
+    "album": "Back to Black",
+    "year": 2006,
+    "price": 29.99,
+    "cover": "Winehouse.png"
+  },
+  {
+    "id": 8,
+    "artist": "Michael Jackson",
+    "album": "Thriller",
+    "year": 1982,
+    "price": 24.99,
+    "cover": "Jackson.png"
+  },
+  {
+    "id": 9,
+    "artist": "Bob Marley",
+    "album": "Legend",
+    "year": 1984,
+    "price": 31.99,
+    "cover": "Marley.png"
+  },
+  {
+    "id": 10,
+    "artist": "Queen",
+    "album": "Greatest Hits",
+    "year": 2021,
+    "price": 35.99,
+    "cover": "Queen.png"
+  },
+  {
+    "id": 11,
+    "artist": "Johnny Cash",
+    "album": "Essential Johnny Cash",
+    "year": 1988,
+    "price": 30.99,
+    "cover": "Cash.png"
+  },
+  {
+    "id": 12,
+    "artist": "Fleetwood Mac",
+    "album": "Greatest Hits",
+    "year": 1988,
+    "price": 26.99,
+    "cover": "Fleetwood.png"
+  },{
+    "id": 13,
+    "artist": "The Beatles",
+    "album": "Abbey Road",
+    "year": 1969,
+    "price": 31.99,
+    "cover": "Beatles.png"
+  },{
+    "id": 14,
+    "artist": "Adele",
+    "album": "30",
+    "year": 2021,
+    "price": 38.99,
+    "cover": "Adele.png"
+  },{
+    "id": 15,
+    "artist": "Lauryn Hill",
+    "album": "Miseducation of Lauryn Hill",
+    "year": 1998,
+    "price": 30.99,
+    "cover": "Lauryn.png"
+  },{
+    "id": 16,
+    "artist": "Chris Stapleton",
+    "album": "Traveller",
+    "year": 2015,
+    "price": 34.99,
+    "cover": "Stapleton.png"
   }
 ]
